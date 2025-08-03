@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://bp6tshpljn6lq" path="res://Assets/Models/Astroid.blend" id="1_0e3vx"]
 [ext_resource type="Script" uid="uid://d3ciif222vjqk" path="res://Scripts/astroid.gd" id="2_6j5ir"]
-[ext_resource type="PackedScene" uid="uid://d3keidklc100i" path="res://Scenes/obital_miner.tscn" id="3_0e3vx"]
+[ext_resource type="PackedScene" path="res://Scenes/obital_miner.tscn" id="3_0e3vx"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4rmt8"]
 sky_top_color = Color(0, 0, 0, 1)
