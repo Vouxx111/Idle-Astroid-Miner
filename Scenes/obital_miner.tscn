@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3keidklc100i"]
+
+[ext_resource type="PackedScene" uid="uid://csqsnhv3anl5" path="res://Assets/Models/Basic Miner.blend" id="1_bj18w"]
+[ext_resource type="Script" uid="uid://cwo7ilwjea0sd" path="res://Scripts/obital_miner.gd" id="1_yj5bv"]
+
+[node name="Obital Miner" type="Node3D"]
+script = ExtResource("1_yj5bv")
+
+[node name="Basic Miner" parent="." instance=ExtResource("1_bj18w")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1.5, 0)

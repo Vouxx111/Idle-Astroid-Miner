@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://bp6tshpljn6lq" path="res://Assets/Models/Astroid.blend" id="1_0e3vx"]
 [ext_resource type="Script" uid="uid://d3ciif222vjqk" path="res://Scripts/astroid.gd" id="2_6j5ir"]
-[ext_resource type="PackedScene" uid="uid://csqsnhv3anl5" path="res://Assets/Models/Basic Miner.blend" id="3_mgc0q"]
+[ext_resource type="PackedScene" uid="uid://d3keidklc100i" path="res://Scenes/obital_miner.tscn" id="3_0e3vx"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4rmt8"]
 sky_top_color = Color(0, 0, 0, 1)
@@ -14,26 +14,32 @@ ground_horizon_color = Color(0, 0, 0, 1)
 sky_material = SubResource("ProceduralSkyMaterial_4rmt8")
 
 [sub_resource type="Environment" id="Environment_pu3va"]
-background_mode = 2
+background_mode = 1
+background_color = Color(0.011963, 3.81662e-08, 0.00567568, 1)
+background_energy_multiplier = 3.35
 sky = SubResource("Sky_l756w")
+ambient_light_energy = 0.0
 tonemap_mode = 2
 glow_enabled = true
 
-[node name="Node3D" type="Node3D"]
+[node name="Main Game" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_pu3va")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.930418, -0.227651, 0.287225, 0, 0.783693, 0.621148, -0.366501, -0.577927, 0.729162, 0, 0, 0)
+transform = Transform3D(0.930418, -0.227651, 0.287224, 0, 0.783693, 0.621148, -0.366501, -0.577927, 0.729162, 0, 0, 0)
+light_energy = 0.25
 shadow_enabled = true
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.55068)
 size = 6.0
 
-[node name="Astroid2" parent="." instance=ExtResource("1_0e3vx")]
+[node name="Astroid" parent="." instance=ExtResource("1_0e3vx")]
 script = ExtResource("2_6j5ir")
 
-[node name="Basic Miner" parent="." instance=ExtResource("3_mgc0q")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 1.5, 0)
+[node name="Obital Miner" parent="." instance=ExtResource("3_0e3vx")]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 12)
