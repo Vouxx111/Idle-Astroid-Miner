@@ -2,8 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://bp6tshpljn6lq" path="res://Assets/Models/Astroid.blend" id="1_0e3vx"]
 [ext_resource type="Script" uid="uid://d3ciif222vjqk" path="res://Scripts/astroid.gd" id="2_6j5ir"]
-[ext_resource type="PackedScene" uid="uid://d3keidklc100i" path="res://Scenes/obital_miner.tscn" id="3_0e3vx"]
-[ext_resource type="PackedScene" uid="uid://d3a7yjif5mm8f" path="res://Scenes/player_hud.tscn" id="4_6j5ir"]
+[ext_resource type="PackedScene" path="res://Scenes/obital_miner.tscn" id="3_0e3vx"]
+[ext_resource type="PackedScene" path="res://Scenes/player_hud.tscn" id="4_6j5ir"]
 [ext_resource type="Texture2D" uid="uid://l4uekj0v1gyk" path="res://Assets/Images/Background.jpg" id="5_mgc0q"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4rmt8"]

@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://ti8kob2rc2f"]
+[gd_scene load_steps=4 format=3 uid="uid://ti8kob2rc2f"]
 
 [ext_resource type="Theme" uid="uid://cfg5tvag2n7mk" path="res://Assets/Themes/Main Theme.tres" id="2_hcxxy"]
+[ext_resource type="Texture2D" uid="uid://d21rbmb4pl646" path="res://Assets/Icons/Menu Icon.png" id="2_ur25d"]
 
 [sub_resource type="GDScript" id="GDScript_totuj"]
 resource_name = "button"
@@ -36,5 +37,14 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("2_hcxxy")
 text = "PLAY"
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 97.0
+offset_top = -2.0
+offset_right = 361.0
+offset_bottom = 262.0
+icon = ExtResource("2_ur25d")
+expand_icon = true
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
