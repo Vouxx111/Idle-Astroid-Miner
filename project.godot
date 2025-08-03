@@ -11,8 +11,20 @@ config_version=5
 [application]
 
 config/name="Idle Astroid Miner"
+run/main_scene="uid://coem3v07y8n1j"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=360
+window/size/viewport_height=640
+window/stretch/mode="viewport"
+window/stretch/aspect="expand"
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
 
 [rendering]
 

@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://coem3v07y8n1j"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4rmt8"]
+sky_top_color = Color(0, 0, 0, 1)
+sky_horizon_color = Color(0, 0, 0, 1)
+ground_bottom_color = Color(0, 0, 0, 1)
+ground_horizon_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Sky" id="Sky_l756w"]
+sky_material = SubResource("ProceduralSkyMaterial_4rmt8")
+
+[sub_resource type="Environment" id="Environment_pu3va"]
+background_mode = 2
+sky = SubResource("Sky_l756w")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="SphereMesh" id="SphereMesh_4rmt8"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_pu3va")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.930418, -0.227651, 0.287225, 0, 0.783693, 0.621148, -0.366501, -0.577927, 0.729162, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.55068)
+projection = 1
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+mesh = SubResource("SphereMesh_4rmt8")
