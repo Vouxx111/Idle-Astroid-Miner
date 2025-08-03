@@ -3,6 +3,7 @@
 [ext_resource type="Theme" uid="uid://cfg5tvag2n7mk" path="res://Assets/Themes/Main Theme.tres" id="2_hcxxy"]
 
 [sub_resource type="GDScript" id="GDScript_totuj"]
+resource_name = "button"
 script/source = "extends Control
 
 
