@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://d3a7yjif5mm8f"]
+[gd_scene load_steps=5 format=3 uid="uid://d3a7yjif5mm8f"]
 
 [ext_resource type="Theme" uid="uid://cfg5tvag2n7mk" path="res://Assets/Themes/Main Theme.tres" id="1_iori6"]
 [ext_resource type="Texture2D" uid="uid://dsrd3udyv2xn3" path="res://Assets/Icons/Upgrade Icon.png" id="2_pkmr8"]
+[ext_resource type="Texture2D" uid="uid://cvd3yyek4k1ic" path="res://Assets/Icons/Tech Icon.png" id="2_uc0x4"]
+[ext_resource type="Texture2D" uid="uid://dmyjxeyup60r4" path="res://Assets/Icons/Shop Icon.png" id="3_pkmr8"]
 
 [node name="Player HUD" type="Control"]
 layout_mode = 3
@@ -47,6 +49,10 @@ layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("1_iori6")
 text = "Tech Tree"
+icon = ExtResource("2_uc0x4")
+icon_alignment = 1
+vertical_icon_alignment = 2
+expand_icon = true
 
 [node name="Button2" type="Button" parent="HBoxContainer2"]
 layout_mode = 2
@@ -63,3 +69,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("1_iori6")
 text = "Shop"
+icon = ExtResource("3_pkmr8")
+icon_alignment = 1
+vertical_icon_alignment = 2
+expand_icon = true
