@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://coem3v07y8n1j"]
+[gd_scene load_steps=9 format=3 uid="uid://coem3v07y8n1j"]
 
 [ext_resource type="PackedScene" uid="uid://bp6tshpljn6lq" path="res://Assets/Models/Astroid.blend" id="1_0e3vx"]
 [ext_resource type="Script" uid="uid://d3ciif222vjqk" path="res://Scripts/astroid.gd" id="2_6j5ir"]
 [ext_resource type="PackedScene" uid="uid://d3keidklc100i" path="res://Scenes/obital_miner.tscn" id="3_0e3vx"]
 [ext_resource type="PackedScene" uid="uid://d3a7yjif5mm8f" path="res://Scenes/player_hud.tscn" id="4_6j5ir"]
+[ext_resource type="Texture2D" uid="uid://l4uekj0v1gyk" path="res://Assets/Images/Background.jpg" id="5_mgc0q"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4rmt8"]
 sky_top_color = Color(0, 0, 0, 1)
@@ -16,7 +17,6 @@ sky_material = SubResource("ProceduralSkyMaterial_4rmt8")
 
 [sub_resource type="Environment" id="Environment_pu3va"]
 background_mode = 1
-background_color = Color(0.011963, 3.81662e-08, 0.00567568, 1)
 background_energy_multiplier = 3.35
 sky = SubResource("Sky_l756w")
 ambient_light_energy = 0.0
@@ -30,11 +30,11 @@ environment = SubResource("Environment_pu3va")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.930418, -0.227651, 0.287224, 0, 0.783693, 0.621148, -0.366501, -0.577927, 0.729162, 0, 0, 0)
-light_energy = 0.25
+light_energy = 0.15
 shadow_enabled = true
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.55068)
+transform = Transform3D(1.0382, 0, 0, 0, 1.0382, 0, 0, 0, 1.0382, 0, 0, 5.55068)
 size = 6.0
 
 [node name="Astroid" parent="." instance=ExtResource("1_0e3vx")]
@@ -42,7 +42,8 @@ script = ExtResource("2_6j5ir")
 
 [node name="Obital Miner" parent="." instance=ExtResource("3_0e3vx")]
 
-[node name="OmniLight3D" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 12)
-
 [node name="Player HUD" parent="." instance=ExtResource("4_6j5ir")]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.083, 0, 0, -1.62209)
+texture = ExtResource("5_mgc0q")
