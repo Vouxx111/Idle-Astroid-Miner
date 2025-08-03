@@ -1,4 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://coem3v07y8n1j"]
+[gd_scene load_steps=7 format=3 uid="uid://coem3v07y8n1j"]
+
+[ext_resource type="PackedScene" uid="uid://bp6tshpljn6lq" path="res://Assets/Astroid.blend" id="1_l756w"]
+[ext_resource type="Script" uid="uid://d3ciif222vjqk" path="res://Scripts/astroid.gd" id="2_pu3va"]
+[ext_resource type="PackedScene" uid="uid://csqsnhv3anl5" path="res://Assets/Basic Miner.blend" id="3_0e3vx"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4rmt8"]
 sky_top_color = Color(0, 0, 0, 1)
@@ -15,8 +19,6 @@ sky = SubResource("Sky_l756w")
 tonemap_mode = 2
 glow_enabled = true
 
-[sub_resource type="SphereMesh" id="SphereMesh_4rmt8"]
-
 [node name="Node3D" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -28,8 +30,10 @@ shadow_enabled = true
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.55068)
-projection = 1
+size = 6.0
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
-mesh = SubResource("SphereMesh_4rmt8")
+[node name="Astroid2" parent="." instance=ExtResource("1_l756w")]
+script = ExtResource("2_pu3va")
+
+[node name="Basic Miner" parent="." instance=ExtResource("3_0e3vx")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 1.5, 0)
