@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://ti8kob2rc2f"]
 
-[ext_resource type="Texture2D" uid="uid://blj35th2fb4op" path="res://dd113d8bdfdbb3e7b7c62fa21b0ccf61dc485e29ae8a39daccdb73477513cae2.jpg" id="1_5b7ti"]
+[ext_resource type="Texture2D" uid="uid://blj35th2fb4op" path="res://Assets/Images/dd113d8bdfdbb3e7b7c62fa21b0ccf61dc485e29ae8a39daccdb73477513cae2.jpg" id="1_5b7ti"]
 
 [node name="Control" type="Control"]
 layout_mode = 3

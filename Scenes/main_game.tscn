@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://coem3v07y8n1j"]
 
-[ext_resource type="PackedScene" uid="uid://bp6tshpljn6lq" path="res://Assets/Astroid.blend" id="1_l756w"]
-[ext_resource type="Script" uid="uid://d3ciif222vjqk" path="res://Scripts/astroid.gd" id="2_pu3va"]
-[ext_resource type="PackedScene" uid="uid://csqsnhv3anl5" path="res://Assets/Basic Miner.blend" id="3_0e3vx"]
+[ext_resource type="PackedScene" uid="uid://bp6tshpljn6lq" path="res://Assets/Models/Astroid.blend" id="1_0e3vx"]
+[ext_resource type="Script" uid="uid://d3ciif222vjqk" path="res://Scripts/astroid.gd" id="2_6j5ir"]
+[ext_resource type="PackedScene" uid="uid://csqsnhv3anl5" path="res://Assets/Models/Basic Miner.blend" id="3_mgc0q"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4rmt8"]
 sky_top_color = Color(0, 0, 0, 1)
@@ -32,8 +32,8 @@ shadow_enabled = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.55068)
 size = 6.0
 
-[node name="Astroid2" parent="." instance=ExtResource("1_l756w")]
-script = ExtResource("2_pu3va")
+[node name="Astroid2" parent="." instance=ExtResource("1_0e3vx")]
+script = ExtResource("2_6j5ir")
 
-[node name="Basic Miner" parent="." instance=ExtResource("3_0e3vx")]
+[node name="Basic Miner" parent="." instance=ExtResource("3_mgc0q")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 1.5, 0)

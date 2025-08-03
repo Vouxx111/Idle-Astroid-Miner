@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://csqsnhv3anl5"
-path="res://.godot/imported/Basic Miner.blend-43218d179dc1c31de341e3cdccbe88ed.scn"
+path="res://.godot/imported/Basic Miner.blend-be2447493efb05bb9d701307c954fff0.scn"
 
 [deps]
 
-source_file="res://Assets/Basic Miner.blend"
-dest_files=["res://.godot/imported/Basic Miner.blend-43218d179dc1c31de341e3cdccbe88ed.scn"]
+source_file="res://Assets/Models/Basic Miner.blend"
+dest_files=["res://.godot/imported/Basic Miner.blend-be2447493efb05bb9d701307c954fff0.scn"]
 
 [params]
 

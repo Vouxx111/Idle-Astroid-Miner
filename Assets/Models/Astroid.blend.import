@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bp6tshpljn6lq"
-path="res://.godot/imported/Astroid.blend-87b969795e67c165e6f8e523c182df08.scn"
+path="res://.godot/imported/Astroid.blend-e461d6519d54cc700e30a179603af25d.scn"
 
 [deps]
 
-source_file="res://Assets/Astroid.blend"
-dest_files=["res://.godot/imported/Astroid.blend-87b969795e67c165e6f8e523c182df08.scn"]
+source_file="res://Assets/Models/Astroid.blend"
+dest_files=["res://.godot/imported/Astroid.blend-e461d6519d54cc700e30a179603af25d.scn"]
 
 [params]
 
