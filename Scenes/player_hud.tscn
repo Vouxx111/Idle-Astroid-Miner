@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://d3a7yjif5mm8f"]
+[gd_scene load_steps=0 format=3 uid="uid://d3a7yjif5mm8f"]
 
 [node name="Player HUD" type="Control"]
 layout_mode = 3
