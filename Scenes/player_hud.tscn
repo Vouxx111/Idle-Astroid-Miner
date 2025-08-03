@@ -1,4 +1,11 @@
+<<<<<<< Updated upstream
 [gd_scene format=3 uid="uid://d3a7yjif5mm8f"]
+=======
+[gd_scene load_steps=3 format=3 uid="uid://d3a7yjif5mm8f"]
+
+[ext_resource type="Theme" uid="uid://cfg5tvag2n7mk" path="res://Assets/Themes/Main Theme.tres" id="1_pk5j4"]
+[ext_resource type="Texture2D" uid="uid://dsrd3udyv2xn3" path="res://Assets/Icons/Upgrade Icon.png" id="2_iori6"]
+>>>>>>> Stashed changes
 
 [node name="Player HUD" type="Control"]
 layout_mode = 3
@@ -42,14 +49,21 @@ grow_vertical = 0
 [node name="Button" type="Button" parent="HBoxContainer2"]
 layout_mode = 2
 size_flags_horizontal = 3
+theme = ExtResource("1_pk5j4")
 text = "Tech Tree"
 
 [node name="Button2" type="Button" parent="HBoxContainer2"]
 layout_mode = 2
 size_flags_horizontal = 3
+theme = ExtResource("1_pk5j4")
 text = "Upgrades"
+icon = ExtResource("2_iori6")
+icon_alignment = 1
+vertical_icon_alignment = 2
+expand_icon = true
 
 [node name="Button3" type="Button" parent="HBoxContainer2"]
 layout_mode = 2
 size_flags_horizontal = 3
+theme = ExtResource("1_pk5j4")
 text = "Shop"
